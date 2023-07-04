@@ -5,14 +5,14 @@ import ru.netology.stats.MoviePosters;
 
 public class MoviesPosterManagerTest {
     MoviesPosterManager manager = new MoviesPosterManager();
-    MoviePosters movie1 = new MoviePosters(1, "фильм 1", "ужасы");
-    MoviePosters movie2 = new MoviePosters(2, "фильм 2", ",боевик");
-    MoviePosters movie3 = new MoviePosters(3, "фильм 3", ",комедия");
-    MoviePosters movie4 = new MoviePosters(4, "фильм 4", ",триллер");
-    MoviePosters movie5 = new MoviePosters(5, "фильм 5", ",детектив");
-    MoviePosters movie6 = new MoviePosters(6, "фильм 6", ",драма");
-    MoviePosters movie7 = new MoviePosters(7, "фильм 7", ",фантастика");
-    MoviePosters movie8 = new MoviePosters(8, "фильм 8", ",мультфильм");
+    private MoviePosters movie1 = new MoviePosters(1, "фильм 1", "ужасы");
+    private MoviePosters movie2 = new MoviePosters(2, "фильм 2", ",боевик");
+    private MoviePosters movie3 = new MoviePosters(3, "фильм 3", ",комедия");
+    private MoviePosters movie4 = new MoviePosters(4, "фильм 4", ",триллер");
+    private MoviePosters movie5 = new MoviePosters(5, "фильм 5", ",детектив");
+    private MoviePosters movie6 = new MoviePosters(6, "фильм 6", ",драма");
+    private MoviePosters movie7 = new MoviePosters(7, "фильм 7", ",фантастика");
+    private MoviePosters movie8 = new MoviePosters(8, "фильм 8", ",мультфильм");
 
     @BeforeEach
     public void setUp() {

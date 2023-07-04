@@ -1,12 +1,12 @@
 import ru.netology.stats.MoviePosters;
 
 public class MoviesPosterManager {
-    public MoviePosters[] movies = new MoviePosters[0];
+    private MoviePosters[] movies = new MoviePosters[0];
 
-    public int limit;
+    private int limit = 5;
 
     public MoviesPosterManager() {
-        this.limit = 5;
+        this.limit=limit;
     }
 
     public MoviesPosterManager(int limit) {
