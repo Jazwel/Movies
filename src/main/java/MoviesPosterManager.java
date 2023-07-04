@@ -5,10 +5,11 @@ public class MoviesPosterManager {
 
     public int limit;
 
-    public MoviesPosterManager(){
+    public MoviesPosterManager() {
         this.limit = 5;
     }
-    public MoviesPosterManager (int limit){
+
+    public MoviesPosterManager(int limit) {
         this.limit = limit;
     }
 
@@ -21,14 +22,13 @@ public class MoviesPosterManager {
         movies = tmp;
     }
 
-    public MoviePosters[] findAll()
-    {
+    public MoviePosters[] findAll() {
         return movies;
     }
 
     public MoviePosters[] findLast() {
         int resultLenght;
-        if (movies.length <limit ) {
+        if (movies.length < limit) {
             resultLenght = movies.length;
         } else {
             resultLenght = limit;

@@ -15,7 +15,7 @@ public class MoviesPosterManagerTest {
     MoviePosters movie8 = new MoviePosters(8, "фильм 8", ",мультфильм");
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
         manager.addMovie(movie1);
         manager.addMovie(movie2);
         manager.addMovie(movie3);
@@ -25,24 +25,27 @@ public class MoviesPosterManagerTest {
         manager.addMovie(movie7);
         manager.addMovie(movie8);
     }
+
     @Test
-            public void shouldAddMovie() {
+    public void shouldAddMovie() {
         MoviesPosterManager manager = new MoviesPosterManager();
         manager.addMovie(movie1);
         MoviePosters[] expected = {movie1};
-        MoviePosters[]actual = manager.findAll();
-        Assertions.assertArrayEquals(expected,actual);
-    }
-    @Test
-    public void shouldFindAll(){
-        MoviePosters[] expected = {movie1,movie2,movie3,movie4,movie5,movie6,movie7,movie8};
         MoviePosters[] actual = manager.findAll();
-        Assertions.assertArrayEquals(expected,actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void shouldFindLast(){
-        MoviePosters[] expected ={movie8,movie7,movie6,movie5,movie4};
-        MoviePosters[]actual = manager.findLast();
-        Assertions.assertArrayEquals(expected,actual);
+    public void shouldFindAll() {
+        MoviePosters[] expected = {movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8};
+        MoviePosters[] actual = manager.findAll();
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldFindLast() {
+        MoviePosters[] expected = {movie8, movie7, movie6, movie5, movie4};
+        MoviePosters[] actual = manager.findLast();
+        Assertions.assertArrayEquals(expected, actual);
     }
 }
